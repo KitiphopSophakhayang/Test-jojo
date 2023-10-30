@@ -1,0 +1,34 @@
+<!-- <div>
+  <button type="button" (click)="decrease()">-</button>
+  <input type="text" [value]="counter" >
+  <button type="button" (click)="increase()">+</button>
+</div> -->
+
+
+
+<div>
+  <button type="button" (click)="decrease()">-</button>
+  <input type="text" [value]="counter" *ngIf="inputDidplay else elseTamplate" >
+<ng-template #elseTamplate>
+  <span style="font-size: 20px;
+      font-weight: bold;
+      margin-left: 5px;
+      margin-right: 5px;"> 
+    {{counter}}
+  </span>
+</ng-template>
+
+
+  <button type="button" (click)="increase()">+</button>
+</div>
+
+
+
+
+
+<!-- <span>มา 4 จ่าย 3</span>
+<div>
+  <input #priceBuffetInput type="text" placeholder="ราคาบุฟเฟ่">
+  <button (click)="calBuffet(priceBuffetInput.value)">คำนวน</button>
+</div>
+<span>คนละ {{value}} บาท</span> -->

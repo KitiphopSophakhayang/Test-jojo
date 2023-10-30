@@ -1,0 +1,192 @@
+<!-- Hello World Angular
+This is my name is Joe {{title}}
+<br/>
+My name is {{jojo}}
+<button type="button" (click)="GuJoeConsole()">Console GuGUJoe</button>
+<div>
+<button type="button" (click)="ChangeGuJoe('Test01')">Change GuGUJoe</button>
+<button type="button" (click)="ChangeGuJoe('Test02')">Change GuGUJoe</button>
+<button type="button" (click)="ChangeGuJoe('Test03')">Change GuGUJoe</button>
+</div> -->
+
+<!-- ----------------------------------- -->
+
+<!-- <span>มา 4 จ่าย 3</span>
+<div>
+  <input #priceBuffetInput type="text" placeholder="ราคาบุฟเฟ่">
+  <button (click)="calBuffet(priceBuffetInput.value)">คำนวน</button>
+</div>
+<span>คนละ {{value}} บาท</span> -->
+
+
+
+
+
+
+
+<!-- <app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
+<br>
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
+<br>
+<button type="button" (click)="testClick()">TestButton</button> -->
+
+
+
+<!-- ----------------------------------- -->
+
+
+<!-- <app-max-min-meter 
+[minLaBel]="appMinLabel"
+[maxLaBel]="appMaxLabel"
+
+(maxChange)="doAppMaxChange($event)"
+(minChange)="doAppMinChange($event)"
+> 
+</app-max-min-meter>
+
+ -->
+
+ <!-- ----------------------------------- -->
+
+
+<!-- <div style="background-color: aquamarine;" 
+[style.width.px]="200" 
+[style.height.px]="200">
+
+</div> -->
+
+
+<!-- <app-sqaure-flex [divWidth]="sqaureWidht" [divHeight]="sqaureHeight"></app-sqaure-flex>
+<div>
+   width :
+   <button type="button" (click)="sqaureWidht=50">50px</button>
+   <button type="button" (click)="sqaureWidht=100">100px</button>
+   <button type="button" (click)="sqaureWidht=150">150px</button>
+   <br>
+   Height :
+   <button type="button" (click)="sqaureHeight=50">50px</button>
+   <button type="button" (click)="sqaureHeight=100">100px</button>
+   <button type="button" (click)="sqaureHeight=150">150px</button>
+</div> -->
+
+
+
+
+ <!-- ----------------------------------- -->
+
+
+ <!-- <app-action-bar [counter]="appCounter" 
+ (counterChange)="appCounter = $event"> 
+</app-action-bar>
+ <app-sqaure-flex [divWidth]="appCounter"> </app-sqaure-flex> -->
+
+ <!-- ----------------------------------- -->
+
+ <!-- *ngIf คือ เอาไว้ซ่อนไม่ให้ผู้จะให้เห็นได้ -->
+ <!-- <div *ngIf="activate"> 
+  <app-action-bar [(counter)]="appCounter" [step]="20"> 
+  </app-action-bar>
+   <app-sqaure-flex [divWidth]="appCounter"> </app-sqaure-flex>
+ </div>
+ <button type="button" (click)="activate = true"> Activate </button> -->
+
+ 
+ <!-- ----------------------------------- -->
+
+ <!-- <div *ngIf="activate else elesTamplate">
+  <app-action-bar [(counter)]="appCounter" [step]="20"> </app-action-bar>
+   <app-sqaure-flex [divWidth]="appCounter"> </app-sqaure-flex>
+ </div>
+  <ng-template #elesTamplate> 
+      <div>
+        activate now
+      </div>
+  </ng-template>
+
+ <button type="button" (click)="activate = true"> Activate </button> -->
+
+
+
+ <!-- ----------------------------------- -->
+
+
+
+
+
+
+<!-- <app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
+<br>
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
+<br>
+<button type="button" (click)="testClick()">TestButton</button> -->
+
+
+<!-- <app-action-bar [inputDidplay]="false"> </app-action-bar>
+<app-action-bar [inputDidplay]="true"> </app-action-bar> -->
+
+ <!-- ----------------------------------- -->
+
+<!-- {{customerList[1]}}
+
+
+<ul>
+  <li *ngFor="let customer of customerList; let i= index">{{customer}} 
+    <button (click)="removecutomer(i)">remove</button>
+
+  </li>
+</ul>
+
+<button (click)="pushCustomer()"> push </button>
+
+<button (click)="unshiftCustomer()"> unshift </button> -->
+
+
+ <!-- ----------------------------------- -->
+
+<!-- 
+<app-test-request-get></app-test-request-get> -->
+
+
+
+<!-- <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Quantity</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+      <tr>
+          <td>{{ product.code }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.category }}</td>
+          <td>{{ product.quantity }}</td>
+      </tr>
+  </ng-template>
+</p-table> -->
+
+
+
+
+
+<!-- <div>
+
+  <i class="pi pi-cart-plus" style="font-size: 3rem"></i>
+
+  <div class="notification">
+    {{value}}
+  </div>
+</div> -->
+
+
+<app-shopping-cart></app-shopping-cart>
+<app-shopping-cart [value]="0"></app-shopping-cart>
+<app-shopping-cart [value]="1"></app-shopping-cart>
+<app-shopping-cart [value]="100"></app-shopping-cart>
+
+
+
+
+
